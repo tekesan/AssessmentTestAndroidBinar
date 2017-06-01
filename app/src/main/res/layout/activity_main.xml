@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mangkot.pencatatantoko.MainActivity">
+    tools:context="com.mangkot.pencatatantoko.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
 
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nama"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="67dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="89dp" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Nama"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="99dp" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="masuk"
+            android:text="LOGIN"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="203dp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_marginStart="52dp" />
 
     <EditText
         android:id="@+id/editText2"
@@ -25,14 +41,9 @@
         android:hint="Password"
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="163dp" />
+        tools:layout_editor_absoluteY="126dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LOGIN"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="231dp"
-        android:onClick="masuk" />
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

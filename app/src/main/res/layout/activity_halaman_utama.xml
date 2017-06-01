@@ -11,18 +11,18 @@
         android:layout_height="495dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="9dp">
+        tools:layout_editor_absoluteY="9dp"
+        android:weightSum="1">
 
         <EditText
             android:id="@+id/editText7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:ems="10"
             android:hint="Nama Barang"
             android:inputType="textPersonName"
-            android:paddingBottom="10dp"
-            android:layout_marginTop="50dp"
-            android:/>
+            android:paddingBottom="10dp" />
 
         <EditText
             android:id="@+id/editText13"
@@ -42,20 +42,18 @@
             android:inputType="textPersonName"
             android:paddingBottom="10dp" />
 
-        <EditText
-            android:id="@+id/editText12"
+        <DatePicker
+            android:id="@+id/datePicker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Tanggal"
-            android:inputType="date"
-            android:paddingBottom="10dp" />
+            android:calendarViewShown="false"/>
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
+            android:onClick="input"
             android:text="INPUT DATA" />
 
         <Button
