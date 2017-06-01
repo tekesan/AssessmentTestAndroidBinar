@@ -58,5 +58,12 @@
             android:layout_marginTop="50dp"
             android:text="INPUT DATA" />
 
+        <Button
+            android:id="@+id/reset"
+            android:onClick="reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESET" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
