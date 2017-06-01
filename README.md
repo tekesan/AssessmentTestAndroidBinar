@@ -71,16 +71,19 @@ public class Duplikat
   public static String newInput(String input)
   {
       String kalimat="";
+      
       for (int i=0; i <input.length(); i++)
       {
          if (!cekKarakter(kalimat, input.charAt(i)))
             kalimat+=input.charAt(i);
       }
+      
       return kalimat;
   }
   
   public static void main(String args[])
   {
+  
      System.out.print("Masukkan kata atau kalimat : ");
      
      Scanner obj = new Scanner(System.in);
@@ -88,5 +91,6 @@ public class Duplikat
      input=obj.nextLine();
  
      System.out.println("\n"+(newInput(input)));
+     
   }
 }
