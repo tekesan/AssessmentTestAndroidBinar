@@ -8,10 +8,11 @@ Fatih Naufal
 5. muncul toast "in Background"
 6. it should be android.permission.CALL_PHONE
 7. 
-public class MethodAnagram
-{
-    static void cekAnagram(String s1, String s2)
-    {
+    public class MethodAnagram
+    {    
+    
+        static void cekAnagram(String s1, String s2)
+        {
 
         String copyOfs1 = s1.replaceAll("\\s", "");
  
@@ -49,8 +50,10 @@ public class MethodAnagram
     }
 
 8. 
+
 public class Duplikat
 {
+  
   private static String input;
   
   public static boolean cekKarakter(String kal, char x)
