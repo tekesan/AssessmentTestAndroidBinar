@@ -7,7 +7,8 @@ Fatih Naufal
 4. startActivity method
 5. muncul toast "in Background"
 6. it should be android.permission.CALL_PHONE
-7. public class MethodAnagram
+7. 
+public class MethodAnagram
 {
     static void cekAnagram(String s1, String s2)
     {
@@ -47,11 +48,14 @@ Fatih Naufal
         }
     }
 
-8. public class Duplikat
+8. 
+public class Duplikat
 {
   private static String input;
+  
   public static boolean cekKarakter(String kal, char x)
   {
+  
      boolean ketemu=false;
      for (int i=0; i <kal.length(); i++)
      {
@@ -74,10 +78,13 @@ Fatih Naufal
       }
       return kalimat;
   }
+  
   public static void main(String args[])
   {
      System.out.print("Masukkan kata atau kalimat : ");
+     
      Scanner obj = new Scanner(System.in);
+     
      input=obj.nextLine();
  
      System.out.println("\n"+(newInput(input)));
